@@ -1,0 +1,18 @@
+[package]
+name = "twitch_irc"
+version = "0.1.0"
+authors = ["Brian Spit <brian@mythenatic.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+native-tls = "0.2"
+thiserror = "1.0"
+tokio = { version = "0.2", features = ["full"] }
+tokio-native-tls = "0.1"
+tokio-util = { version = "0.3", features = ["codec"] }
+futures = "0.3"
+async-channel = "1.5"
+
+irc_parser = { git = "https://github.com/715209/irc_parser" }
